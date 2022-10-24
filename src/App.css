@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+::-webkit-scrollbar{
+	background-color: black;
+  width: 12px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar-thumb{
+  background-color: aqua;
+  border-radius: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  height: 100vh;
+  padding-top: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.212)),
+  url(https://source.unsplash.com/m3hn2Kn5Bns);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-logo{
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+.Mi-logo{
+  width: 150px;
+}
+.contenedor-calculadora{
+  width: 400px;
+  height: 600px;
+  padding: 14px;
+  background-color: #99c9ff;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+.fila{
+  margin: 4px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.Autor{
+  position: absolute;
   color: white;
+  top: 92%;
+  right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:375px) {
+  .contenedor-logo{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .Autor{
+    display: none;
   }
 }
